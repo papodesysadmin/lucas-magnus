@@ -14,13 +14,13 @@
 
 import { execSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
+import { resolve as pathResolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import ghpages from 'gh-pages';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const PROJECT_ROOT = resolve(__dirname, '..');
+const PROJECT_ROOT = pathResolve(__dirname, '..');
 
 // ============================================================
 // Logging estruturado
@@ -130,9 +130,8 @@ async function verifyDeployment(url, timeoutMs = 60000) {
  * @returns {Promise<void>}
  */
 function publishToGhPages() {
-  return new Promise((resolve, reject) => {
-    const distPath = resolve(PROJECT_ROOT, 'dist');
-
+  const distPath = pathResolve(PROJECT_ROOT, 'dist');
+  return new Promise((promiseResolve, reject) => {
     ghpages.publish(distPath, {
       branch: 'gh-pages',
       message: 'Deploy Lucas Magnus presentation',
@@ -141,7 +140,7 @@ function publishToGhPages() {
       if (err) {
         reject(err);
       } else {
-        resolve();
+        promiseResolve();
       }
     });
   });
@@ -155,7 +154,7 @@ async function main() {
   log('INFO', 'Iniciando deploy para GitHub Pages');
 
   // Step 1: Verificar que dist/ existe e tem conteúdo
-  const distPath = resolve(PROJECT_ROOT, 'dist');
+  const distPath = pathResolve(PROJECT_ROOT, 'dist');
   if (!existsSync(distPath)) {
     log('ERROR', 'Diretório dist/ não encontrado. Execute npm run build primeiro.', { distPath });
     process.stderr.write('[deploy-pages] Erro: Diretório dist/ não encontrado. Execute npm run build primeiro.\n');
