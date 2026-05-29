@@ -50,8 +50,8 @@ Juntos, formam uma identidade que comunica: *alguém que ilumina em grande escal
 
 O nome civil completo é **Lucas Magnus Schossland Bachion**, onde:
 
-- **Schossland** — sobrenome paterno, de origem germânica
-- **Bachion** — sobrenome materno, de origem italiana
+- **Schossland** — sobrenome materno, de origem germânica
+- **Bachion** — sobrenome paterno, de origem italiana
 
 Estes sobrenomes completam o registro civil e representam a união de duas linhagens familiares. No entanto, para fins de marca pessoal e posicionamento público, o nome artístico adotado é exclusivamente **"Lucas Magnus"** — uma decisão estratégica que prioriza memorabilidade, sonoridade e impacto internacional.
 
@@ -332,9 +332,9 @@ Você nascerá em **Florianópolis**, em **dezembro de 2025**, na ilha onde o ma
 
 **Magnus** — para que você seja grande. Não em arrogância, mas em generosidade. Grande em curiosidade, em coragem, em compaixão.
 
-**Schossland** — a linhagem paterna, raízes germânicas que falam de terra firme, de solidez, de quem constrói com as próprias mãos.
+**Schossland** — a linhagem materna, raízes germânicas que falam de terra firme, de solidez, de quem constrói com as próprias mãos.
 
-**Bachion** — a linhagem materna, raízes italianas que falam de calor humano, de família reunida, de mesa farta e abraços longos.
+**Bachion** — a linhagem paterna, raízes italianas que falam de calor humano, de família reunida, de mesa farta e abraços longos.
 
 Você é a união dessas duas histórias. Duas famílias que se encontraram para criar algo novo — e esse algo novo é você, Lucas Magnus.
 
