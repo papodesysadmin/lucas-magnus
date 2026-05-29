@@ -326,7 +326,7 @@ Querido Lucas Magnus,
 
 Estas palavras são escritas antes mesmo de você chegar ao mundo — mas já carregam todo o amor e toda a expectativa de uma família que te espera com o coração transbordando.
 
-Você nascerá em **Florianópolis**, em **dezembro de 2025**, na ilha onde o mar encontra a montanha, onde a natureza é tão grandiosa quanto o nome que escolhemos para você. Não foi por acaso. Cada sílaba de **Lucas Magnus Schossland Bachion** foi pensada, pesquisada, sonhada — porque acreditamos que um nome é o primeiro presente que um pai e uma mãe dão a um filho.
+Você nascerá em **Florianópolis**, em **dezembro de 2026**, na ilha onde o mar encontra a montanha, onde a natureza é tão grandiosa quanto o nome que escolhemos para você. Não foi por acaso. Cada sílaba de **Lucas Magnus Schossland Bachion** foi pensada, pesquisada, sonhada — porque acreditamos que um nome é o primeiro presente que um pai e uma mãe dão a um filho.
 
 **Lucas** — para que você seja luz. Para que ilumine os caminhos por onde passar, para que traga clareza onde houver confusão, esperança onde houver dúvida.
 
@@ -349,4 +349,4 @@ Bem-vindo ao mundo, Lucas Magnus. Florianópolis te espera com sol, sal e o abra
 
 ---
 
-*Documento elaborado como parte do projeto de análise estratégica de naming para Lucas Magnus Schossland Bachion. Florianópolis, Dezembro de 2025.*
+*Documento elaborado como parte do projeto de análise estratégica de naming para Lucas Magnus Schossland Bachion. Florianópolis, Dezembro de 2026.*
