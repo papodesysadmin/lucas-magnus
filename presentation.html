@@ -82,7 +82,7 @@
     .reveal {
       font-family: var(--font-body);
       font-weight: var(--font-weight-body);
-      font-size: var(--font-size-body);
+      font-size: 22px;
       color: var(--color-text);
     }
 
@@ -101,10 +101,10 @@
       margin-bottom: var(--space-md);
     }
 
-    .reveal h1 { font-size: var(--font-size-h1); }
-    .reveal h2 { font-size: var(--font-size-h2); }
-    .reveal h3 { font-size: var(--font-size-h3); }
-    .reveal h4 { font-size: var(--font-size-h4); }
+    .reveal h1 { font-size: 2.5em; }
+    .reveal h2 { font-size: 1.8em; }
+    .reveal h3 { font-size: 1.4em; }
+    .reveal h4 { font-size: 1.2em; }
 
     /* Body text */
     .reveal p,
@@ -128,22 +128,22 @@
     }
 
     .reveal .title-slide h1 {
-      font-size: var(--font-size-h1);
+      font-size: 3em;
       color: var(--color-primary);
       margin-bottom: var(--space-md);
     }
 
     .reveal .title-slide .subtitle {
       font-family: var(--font-body);
-      font-size: var(--font-size-large);
+      font-size: 1.2em;
       color: var(--color-secondary);
       font-weight: var(--font-weight-bold);
     }
 
     /* LM Crest */
     .reveal .lm-crest {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       min-width: 24px;
       min-height: 24px;
       margin: var(--space-lg) auto;
@@ -167,7 +167,8 @@
 
     .reveal .section-divider h2 {
       color: var(--color-secondary);
-      border-bottom: var(--border-thin);
+      font-size: 2.2em;
+      border-bottom: 2px solid var(--color-secondary);
       padding-bottom: var(--space-sm);
     }
 
@@ -203,23 +204,11 @@
 
     /* Visual asset placeholders */
     .reveal .visual-asset {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 200px;
-      border: var(--border-thin);
-      border-radius: 4px;
-      margin: var(--space-md) 0;
-      background: var(--color-neutral);
-      box-shadow: var(--shadow-subtle);
+      display: none;
     }
 
     .reveal .visual-asset-placeholder {
-      font-family: var(--font-body);
-      font-size: var(--font-size-small);
-      color: var(--color-secondary);
-      text-align: center;
-      padding: var(--space-md);
+      display: none;
     }
 
     /* Slide backgrounds */
@@ -942,10 +931,10 @@
         backgroundTransition: 'fade',
 
         // Slide dimensions (responsive)
-        width: 1920,
-        height: 1080,
-        margin: 0.04,
-        minScale: 0.2,
+        width: 960,
+        height: 700,
+        margin: 0.1,
+        minScale: 0.5,
         maxScale: 2.0,
 
         // Appearance
