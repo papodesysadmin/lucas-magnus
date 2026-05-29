@@ -1,0 +1,49 @@
+/**
+ * Design System — Lucas Magnus Presentation
+ * Identidade visual "Old Money Tech": clássica, serifada, elegante.
+ * Single source of truth para tokens visuais (CSS Custom Properties).
+ * Reutilizado entre HTML slides (Reveal.js) e PDF (Puppeteer CSS injection).
+ */
+
+:root {
+  /* ===== Paleta de Cores ===== */
+  --color-primary: #1B2A4A;        /* Deep Navy */
+  --color-secondary: #C9A96E;      /* Gold / Champagne */
+  --color-accent: #722F37;         /* Burgundy */
+  --color-neutral: #FAF8F5;        /* Cream / Off-white */
+  --color-text: #2C2C2C;           /* Dark text */
+  --color-text-light: #F5F5F0;     /* Light text on dark bg */
+
+  /* ===== Tipografia ===== */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-weight-heading: 700;
+  --font-weight-body: 400;
+  --font-weight-bold: 600;
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 28px;
+  --font-size-h4: 24px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+
+  /* ===== Espaçamento ===== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-2xl: 128px;
+
+  /* ===== Bordas ===== */
+  --border-thin: 1px solid var(--color-secondary);
+  --border-accent: 2px solid var(--color-accent);
+
+  /* ===== Sombras ===== */
+  --shadow-subtle: 0 2px 8px rgba(27, 42, 74, 0.08);
+  --shadow-elevated: 0 8px 32px rgba(27, 42, 74, 0.16);
+
+  /* ===== Transições ===== */
+  --transition-default: 400ms ease;
+}

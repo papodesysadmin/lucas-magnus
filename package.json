@@ -1,0 +1,36 @@
+{
+  "name": "lucas-magnus-presentation",
+  "version": "1.0.0",
+  "description": "Pipeline de build automatizado para apresentação interativa Lucas Magnus — slides Reveal.js, PDF companion, prompts de imagens IA, upload Drive e deploy GitHub Pages",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node src/build-slides.js && node src/build-pdf.js && node src/build-prompts.js",
+    "upload": "node src/drive-uploader.js",
+    "deploy": "node src/deploy-pages.js",
+    "all": "npm run build && npm run upload && npm run deploy",
+    "validate": "node src/validate-compliance.js",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "presentation",
+    "reveal.js",
+    "naming",
+    "branding",
+    "lucas-magnus"
+  ],
+  "author": "Christiano Bachion",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "googleapis": "^144.0.0",
+    "md-to-pdf": "^5.2.4",
+    "reveal.js": "^4.6.1"
+  },
+  "devDependencies": {
+    "fast-check": "^3.23.2",
+    "vitest": "^3.1.4"
+  }
+}

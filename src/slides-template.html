@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Magnus — Análise Estratégica de Nome e Celebração</title>
+
+  <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Design System Tokens (injected by build-slides.js) -->
+  <style id="design-system">
+{{DESIGN_SYSTEM_CSS}}
+  </style>
+
+  <!-- Reveal.js Core CSS (inlined by build-slides.js) -->
+  <style id="reveal-css">
+    /* Placeholder: Reveal.js CSS will be inlined here during build */
+  </style>
+
+  <!-- Presentation Styles -->
+  <style id="presentation-styles">
+    /* Base layout */
+    .reveal {
+      font-family: var(--font-body);
+      font-weight: var(--font-weight-body);
+      font-size: var(--font-size-body);
+      color: var(--color-text);
+    }
+
+    .reveal .slides {
+      text-align: left;
+    }
+
+    /* Headings */
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4 {
+      font-family: var(--font-heading);
+      font-weight: var(--font-weight-heading);
+      color: var(--color-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    .reveal h1 { font-size: var(--font-size-h1); }
+    .reveal h2 { font-size: var(--font-size-h2); }
+    .reveal h3 { font-size: var(--font-size-h3); }
+    .reveal h4 { font-size: var(--font-size-h4); }
+
+    /* Body text */
+    .reveal p,
+    .reveal li {
+      font-size: var(--font-size-body);
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+
+    .reveal .slide-content {
+      padding: var(--space-lg);
+    }
+
+    /* Title slide */
+    .reveal .title-slide {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .reveal .title-slide h1 {
+      font-size: var(--font-size-h1);
+      color: var(--color-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    .reveal .title-slide .subtitle {
+      font-family: var(--font-body);
+      font-size: var(--font-size-large);
+      color: var(--color-secondary);
+      font-weight: var(--font-weight-bold);
+    }
+
+    /* LM Crest */
+    .reveal .lm-crest {
+      width: 120px;
+      height: 120px;
+      min-width: 24px;
+      min-height: 24px;
+      margin: var(--space-lg) auto;
+    }
+
+    .reveal .lm-crest svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Section divider slides */
+    .reveal .section-divider {
+      background-color: var(--color-primary);
+      color: var(--color-text-light);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .reveal .section-divider h2 {
+      color: var(--color-secondary);
+      border-bottom: var(--border-thin);
+      padding-bottom: var(--space-sm);
+    }
+
+    /* Lists */
+    .reveal ul,
+    .reveal ol {
+      margin-left: var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+
+    .reveal li {
+      margin-bottom: var(--space-sm);
+    }
+
+    /* Emphasis and highlights */
+    .reveal strong {
+      color: var(--color-primary);
+      font-weight: var(--font-weight-bold);
+    }
+
+    .reveal em {
+      color: var(--color-accent);
+    }
+
+    /* Blockquotes */
+    .reveal blockquote {
+      border-left: var(--border-accent);
+      padding: var(--space-md) var(--space-lg);
+      margin: var(--space-md) 0;
+      background: rgba(201, 169, 110, 0.05);
+      font-style: italic;
+    }
+
+    /* Visual asset placeholders */
+    .reveal .visual-asset {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+      border: var(--border-thin);
+      border-radius: 4px;
+      margin: var(--space-md) 0;
+      background: var(--color-neutral);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .reveal .visual-asset-placeholder {
+      font-family: var(--font-body);
+      font-size: var(--font-size-small);
+      color: var(--color-secondary);
+      text-align: center;
+      padding: var(--space-md);
+    }
+
+    /* Slide backgrounds */
+    .reveal section {
+      background-color: var(--color-neutral);
+    }
+
+    .reveal section.dark-bg {
+      background-color: var(--color-primary);
+      color: var(--color-text-light);
+    }
+
+    .reveal section.dark-bg h2,
+    .reveal section.dark-bg h3 {
+      color: var(--color-secondary);
+    }
+
+    .reveal section.dark-bg p,
+    .reveal section.dark-bg li {
+      color: var(--color-text-light);
+    }
+
+    /* Responsive: min 16px body font on viewports ≤768px, no horizontal scrolling */
+    @media (max-width: 768px) {
+      .reveal {
+        font-size: var(--font-size-body);
+      }
+
+      .reveal h1 { font-size: var(--font-size-h2); }
+      .reveal h2 { font-size: var(--font-size-h3); }
+      .reveal h3 { font-size: var(--font-size-h4); }
+
+      .reveal .slide-content {
+        padding: var(--space-md);
+      }
+
+      .reveal .slides {
+        overflow-x: hidden;
+      }
+
+      html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title Slide -->
+      <section class="title-slide">
+        <div class="lm-crest">
+{{LM_CREST_SVG}}
+        </div>
+        <h1>Lucas Magnus</h1>
+        <p class="subtitle">Análise Estratégica de Nome e Celebração</p>
+      </section>
+
+      <!-- Slides Content (injected by build-slides.js) -->
+      <!-- Horizontal sections = main topics -->
+      <!-- Vertical slides (nested <section>) = sub-sections within each topic -->
+{{SLIDES_CONTENT}}
+
+    </div>
+  </div>
+
+  <!-- Reveal.js Core JS (inlined by build-slides.js) -->
+  <script id="reveal-js">
+    // Placeholder: Reveal.js core will be inlined here during build
+  </script>
+
+  <!-- Reveal.js Initialization -->
+  <script id="reveal-init">
+    document.addEventListener('DOMContentLoaded', function() {
+      Reveal.initialize({
+        // Navigation
+        hash: true,
+        history: true,
+        keyboard: true,
+        touch: true,
+        controls: true,
+        controlsTutorial: true,
+        progress: true,
+
+        // Vertical slides (sub-sections)
+        navigationMode: 'default',
+
+        // Transitions: fade/slide, duration 300-800ms (using 400ms matching design system token)
+        transition: 'slide',
+        transitionSpeed: 'default',
+        backgroundTransition: 'fade',
+
+        // Slide dimensions (responsive)
+        width: 1920,
+        height: 1080,
+        margin: 0.04,
+        minScale: 0.2,
+        maxScale: 2.0,
+
+        // Appearance
+        center: true,
+        display: 'block',
+
+        // Plugins (if inlined)
+        plugins: []
+      });
+    });
+  </script>
+
+  <!-- Custom transition timing override (300-800ms range, default 400ms matching design system) -->
+  <style id="transition-timing">
+    .reveal .slides section {
+      transition-duration: 400ms;
+    }
+    .reveal[data-transition-speed="fast"] .slides section {
+      transition-duration: 300ms;
+    }
+    .reveal[data-transition-speed="slow"] .slides section {
+      transition-duration: 800ms;
+    }
+  </style>
+</body>
+</html>

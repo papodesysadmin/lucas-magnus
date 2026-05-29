@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Lucas Magnus monogram crest">
+  <title>LM Crest — Lucas Magnus</title>
+  <defs>
+    <!-- Gold gradient for shield border -->
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4B87A"/>
+      <stop offset="50%" stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#A8884E"/>
+    </linearGradient>
+    <!-- Navy gradient for shield fill -->
+    <linearGradient id="navy-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#243656"/>
+      <stop offset="100%" stop-color="#1B2A4A"/>
+    </linearGradient>
+    <!-- Subtle circuit pattern -->
+    <pattern id="circuit-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 10 h6 M14 10 h6 M10 0 v6 M10 14 v6" stroke="#2A3F66" stroke-width="0.5" fill="none" opacity="0.4"/>
+      <circle cx="10" cy="10" r="1" fill="#2A3F66" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Shield shape (heraldic) -->
+  <path d="M60 8 L108 28 L108 65 Q108 95 60 112 Q12 95 12 65 L12 28 Z"
+        fill="url(#navy-gradient)" stroke="url(#gold-gradient)" stroke-width="3"/>
+
+  <!-- Circuit pattern overlay on shield -->
+  <path d="M60 8 L108 28 L108 65 Q108 95 60 112 Q12 95 12 65 L12 28 Z"
+        fill="url(#circuit-pattern)" clip-path="url(#shield-clip)"/>
+
+  <!-- Inner border (geometric accent) -->
+  <path d="M60 16 L100 33 L100 63 Q100 89 60 104 Q20 89 20 63 L20 33 Z"
+        fill="none" stroke="#C9A96E" stroke-width="0.75" opacity="0.6"/>
+
+  <!-- Geometric diamond accent at top -->
+  <path d="M60 20 L66 26 L60 32 L54 26 Z" fill="#722F37" opacity="0.8"/>
+
+  <!-- Letter "L" — serif style, left side -->
+  <path d="M36 42 L36 82 L52 82 L52 78 L41 78 L41 42 Z"
+        fill="#C9A96E"/>
+
+  <!-- Letter "M" — serif style, right side -->
+  <path d="M56 42 L56 82 L61 82 L61 52 L70 72 L72 72 L81 52 L81 82 L86 82 L86 42 L80 42 L71 64 L62 42 Z"
+        fill="#C9A96E"/>
+
+  <!-- Subtle horizontal circuit traces between letters -->
+  <line x1="52" y1="62" x2="56" y2="62" stroke="#C9A96E" stroke-width="0.5" opacity="0.5"/>
+  <circle cx="54" cy="62" r="0.8" fill="#C9A96E" opacity="0.4"/>
+
+  <!-- Bottom decorative element — small geometric nodes -->
+  <circle cx="48" cy="90" r="1.2" fill="#C9A96E" opacity="0.5"/>
+  <circle cx="60" cy="94" r="1.2" fill="#C9A96E" opacity="0.5"/>
+  <circle cx="72" cy="90" r="1.2" fill="#C9A96E" opacity="0.5"/>
+  <line x1="48" y1="90" x2="60" y2="94" stroke="#C9A96E" stroke-width="0.4" opacity="0.4"/>
+  <line x1="60" y1="94" x2="72" y2="90" stroke="#C9A96E" stroke-width="0.4" opacity="0.4"/>
+
+  <!-- Top crown-like accent (3 small points) -->
+  <path d="M54 12 L56 8 L58 12 M60 10 L60 6 L60 10 M62 12 L64 8 L66 12"
+        fill="none" stroke="#C9A96E" stroke-width="0.8" opacity="0.6"/>
+</svg>
